@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //In javascript there is three types of variable//
+        var a = "hello";
+        var a = "hello"      //redeclaration is possible//
+        a = "hii"            //reassignment is possible
+        console.log(a);
+
+        let b = "hello";
+        // let b = "hii";     //redeclaration is not posible//
+        b = "hii"            //reassignment is possible
+        console.log(b) 
+
+        const c = "hello";
+        // const c = "hello";     //redecalaration is not possible //
+        // c = "hii"            //reassignment is not possible
+        console.log(c)
+
+
+        //DataTypes in js
+        //we have two types of DataTyoes in js
+        //1.primitive
+
+        //Number
+        let d = 123;
+        console.log(typeof d);
+
+        //Null
+
+        let e = null;
+        console.log(typeof e);
+
+        //Symbol
+        let f= Symbol("hii");
+        console.log(typeof f)
+
+       //string
+       let g = `hello ${d} this "is" javascript`   //template literlas
+       console.log(g)
+ 
+       //Bigint
+       let h = 112566387n;
+       console.log(typeof h);
+       
+       //Bollean
+       let i = true;
+       console.log(typeof i);
+       
+       //undefined
+       let j;
+       console.log(typeof j);
+
+       //What is the diffrence between Undefined and Not Defined ?
+       //Undefined means variable is declared but nut assigend a value.
+       //Notdefind means varible iss not declared.
+       
+       //2. Non premitive datatypes
+       
+       // Array
+
+       let k = [1,2,3,4,5];    //array is also an object
+       console.log(typeof k);
+       console.log(k[3]);
+
+       //object
+
+       let obj = {
+          //key: 'value'
+          Name: 'jayeh',
+          Salary: 200000,
+          subject: 'java',
+       }
+        console.log(typeof obj);
+        console.log(obj.Salary)
+    </script>
+</body>
+</html>
