@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            height: 300px;
+            width: 400px;
+            background-color: black;
+            color: white;
+        }
+        .container-1{
+            display: flex;
+            flex-direction: column;
+
+        }
+        div [class*="box"]{
+            height: 40px;
+            width: 100px;
+        }
+        input{
+            height: 40px;
+            width: 120px;
+        }
+        .box-1{
+            margin-bottom: 20px;
+        }
+
+        button{
+            height: 20px;
+            width: 70px;
+        }
+        #input-1{
+            margin-bottom: 20px;
+        }
+        .container-2{
+            height: 50px;
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: green;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-1">
+    <div class="box-1">Enter value 1</div>
+    <div class="box-2">Enter value 2</div>
+    </div>
+    <div class="container-1">
+    <input type="number" id="input-1">
+    <input type="number" id="input-2">
+</div>
+
+</div>
+<div class="container-2">
+<button onclick="addition()">Add</button>
+<button onclick="subtract()">Substract</button>
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+</div>
+<script>
+
+function addition() {
+            let a = parseInt(document.getElementById('input-1').value);
+            let b = parseInt(document.getElementById('input-2').value);
+            console.log(a + b);
+        }
+
+        function multiply() {
+            let a = parseInt(document.getElementById('input-1').value);
+            let b = parseInt(document.getElementById('input-2').value);
+            console.log(a * b);
+        }
+
+        function divide() {
+            let a = parseInt(document.getElementById('input-1').value);
+            let b = parseInt(document.getElementById('input-2').value);
+            console.log(a / b);
+        }
+
+        function subtract() {
+            let a = parseInt(document.getElementById('input-1').value);
+            let b = parseInt(document.getElementById('input-2').value);
+            console.log(a - b);
+        }
+    
+   
+</script>
+</body>
+</html>
