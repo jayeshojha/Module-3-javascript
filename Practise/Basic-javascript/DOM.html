@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">This is js</h1>
+    <p class="para-1" name="kala">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, praesentium iusto provident nihil quidem, fuga quas, error saepe molestias iste maiores deserunt? Fugit, itaque cumque?</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eligendi placeat sint rerum, necessitatibus officia quaerat dolorem autem blanditiis ducimus dolore delectus a nobis sequi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eligendi placeat sint rerum, necessitatibus officia quaerat dolorem autem blanditiis ducimus dolore delectus a nobis sequi.
+    </p>
+    <input type="text" name="pila">
+    <input type="text" name="pila">
+    <input type="text" name="pila">
+    <script>
+        // Access HTML data
+       
+        // 1. by id
+
+        // let heading = document.getElementById("heading");
+        // console.log(heading);
+        //  heading.innerHTML = "<h2> hey </h2>"
+
+        // 2. by class
+
+        // let para = document.getElementsByClassName("para-1")
+        // console.log(para)
+
+        // 3. by name
+
+        // let kala = document.getElementsByName("kala");
+        // console.log(kala);
+        
+        // let pila = document.getElementsByName("pila");
+        // console.log(pila[2]);
+
+        //  4. by tag name
+ 
+        // let inp = document.getElementsByTagName("input")
+        //  console.log(inp)
+         
+        //  5. by querySelector
+
+        let a = document.querySelector("input");
+        let b = document.querySelectorAll('input')
+        console.log(a);
+        console.log(b);
+          
+        let c = document.querySelector(".para-1");
+        console.log(c);
+        let d = document.querySelector("#heading");
+        console.log(d);
+
+
+    </script>
+</body>
+</html>
