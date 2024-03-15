@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-box {
+            width: 65%;
+        }
+
+        .color {
+            color: #ff905a;
+        }
+
+        .price {
+            text-decoration: line-through;
+        }
+
+        .type {
+            font-weight: bold;
+        }
+
+        .brand {
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        .cart {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .box-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cart" id="box" onclick="addElements()">
+        <div class="img-box"><img
+                src="6be97619-12fc-40c3-a91b-b5d5f13ba8181696013416163StormbornMenBlackPrintedRawEdgeT-shirt1.webp"
+                alt=""></div>
+        <span class="brand">Stromborn</span>
+        <span>Over sized pure cotton t-shirt</span>
+        <span class="">
+            <span class="type">RS. 549</span>
+            <span class="price">Rs 999</span>
+            <span class="color">(45% OFF)</span>
+        </span>
+    </div>
+    <div id="box-2"></div>
+
+    <script>
+        function addElements() {
+            let a = document.getElementById('box');
+            let b = document.createElement('div');
+            b.innerHTML = a.innerHTML;
+            b.classList.add("box-1");
+            let c = document.getElementById('box-2').appendChild(b);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid yellow;
+          }
+          .container{
+            width: 90%;
+          }
+          .card{
+            background-color: black;
+          }
+          .col-25{
+            width: 25%;
+          }
+          .row-25{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+            justify-content: space-between;
+            color: white;
+          }
+          .card{
+            text-align: center;
+          }
+          img{
+            width: 100%;
+          }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+       <div class="container">
+        <div id="row-25" class="row-25">
+         
+        </div>
+       </div>
+
+    <script>
+        let arr = ["350$","360$","400$","500$"]
+        let arr2 = []
+        function MultipleCart(){
+            for(let i = 0;i<=10;i++ ){
+            let node = document.createElement("div");
+            node.setAttribute("class", "col-25");
+            let text = `    <div class="card">
+                    <div class="product-img">
+                    <img src="-473Wx593H-469452097-grey-MODEL.avif" alt="">
+                    </div>
+                    <h2>Nime shoes</h2>
+                    <p><del>${arr[i]}</del></p>
+                    </div>`
+            node.innerHTML = text;
+            document.getElementById('row-25').appendChild(node);
+        }
+      }
+      MultipleCart();
+    </script>
+</body>
+</html>
