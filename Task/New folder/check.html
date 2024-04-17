@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    currency: <input type="text" id="wer" value="200">
+    <select name="" id="in" onchange="change() ">
+        <option hidden>----Select country----</option>
+        <option value="40">INDIA</option>
+        <option value="83">USA</option>
+        <option value="56">AUS</option>
+        <option value="86">BANK</option>
+    </select>
+
+    <script>
+        curr=document.getElementById('wer')
+        conv=document.getElementById('in')
+
+        function change() {
+            curr.value=curr.value*conv.value
+        }
+    </script>
+</body>
+</html>
